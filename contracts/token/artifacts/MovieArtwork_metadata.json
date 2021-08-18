@@ -462,6 +462,47 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "tokenURI",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "artworkNum",
+						"type": "uint256"
+					}
+				],
+				"name": "mintMovieArtwork",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "tokenURI",
+						"type": "string"
+					}
+				],
+				"name": "mintMovieArtwork",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -511,24 +552,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "string",
-						"name": "tokenURI",
-						"type": "string"
-					}
-				],
-				"name": "publishMovie",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -890,7 +913,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/token/Movie.sol": "Movie"
+			"contracts/token/MovieArtwork.sol": "MovieArtwork"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -1016,11 +1039,11 @@
 				"dweb:/ipfs/Qmdpmua9Y4UQhUwR6EeyZwVYJJ1n4iAG1giFDgb9EXuyqd"
 			]
 		},
-		"contracts/token/Movie.sol": {
-			"keccak256": "0x93cd611350b921df0133c4a3cf6b1cd8384309a582e04ae013cebb587b3e81c6",
+		"contracts/token/MovieArtwork.sol": {
+			"keccak256": "0x818be9adb83c2a9d561ca6ea51618bc644036dcc08cef44958bae97c0d3bc751",
 			"urls": [
-				"bzz-raw://a97af55245a2e670a4796afd3a9af1c4a24294bbdc875c3aee99f3acc551c422",
-				"dweb:/ipfs/QmXrYWJGy63PzdzHkuCrCi2uv2uRpLQMAwR6yqKiiyaxVW"
+				"bzz-raw://ae9a07e0a482a7b92f74c0044ebfcf08a7da6a94d675e751ac6376add75462af",
+				"dweb:/ipfs/QmWhFcmDwd6L4BgAvZyXT73P2XsxuwoA7rnJTx6me2f2yT"
 			]
 		},
 		"contracts/utils/Address.sol": {

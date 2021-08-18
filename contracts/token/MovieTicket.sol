@@ -2,12 +2,12 @@ pragma solidity ^0.8.0;
 
 import "./ERC721/presets/ERC721PresetMinterPauserAutoId.sol";
 
-contract Movie is ERC721PresetMinterPauserAutoId {
+contract MovieTicket is ERC721PresetMinterPauserAutoId {
 
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdTracker;
     
-    constructor() ERC721PresetMinterPauserAutoId("Movie", "MOV", "http://developer.mathwallet.org/bsc/nfttest/") 
+    constructor() ERC721PresetMinterPauserAutoId("MovieTicket", "MT", "http://developer.mathwallet.org/bsc/nfttest/") 
     {}
     
     // This allows the minter to update the tokenURI after it's been minted.
@@ -17,12 +17,15 @@ contract Movie is ERC721PresetMinterPauserAutoId {
         setTokenURI(tokenId, tokenURI);
     }
     
-    function publishMovie(address to, string memory tokenURI) public {
+    function mintMovieTicket(address to, string memory tokenURI, uint256 ticketNum) public {
         require(hasRole(MINTER_ROLE, _msgSender()), "ERC721PresetMinterPauserAutoId: must have minter role to mint");
-        uint256 tokenID = _tokenIdTracker.current();
-        ERC721._mint(to, tokenID);
-        setTokenURI(tokenID ,tokenURI);
-        _tokenIdTracker.increment();
+        require(ticketNum > 0, "MovieTicket: must mint at least one ticket");
+        for(uint256 i = 0; i < ticketNum; i++){
+            uint256 tokenID = _tokenIdTracker.current();
+            ERC721._mint(to, tokenID);
+            setTokenURI(tokenID ,tokenURI);
+            _tokenIdTracker.increment();
+        }
     }
     
     

@@ -462,6 +462,29 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "tokenURI",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ticketNum",
+						"type": "uint256"
+					}
+				],
+				"name": "mintMovieTicket",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -511,24 +534,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "string",
-						"name": "tokenURI",
-						"type": "string"
-					}
-				],
-				"name": "publishMovie",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -890,7 +895,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/token/Movie.sol": "Movie"
+			"contracts/token/MovieTicket.sol": "MovieTicket"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -1016,11 +1021,11 @@
 				"dweb:/ipfs/Qmdpmua9Y4UQhUwR6EeyZwVYJJ1n4iAG1giFDgb9EXuyqd"
 			]
 		},
-		"contracts/token/Movie.sol": {
-			"keccak256": "0x93cd611350b921df0133c4a3cf6b1cd8384309a582e04ae013cebb587b3e81c6",
+		"contracts/token/MovieTicket.sol": {
+			"keccak256": "0x2b40a762545f87d6a6c99ce8b057b369c8a211f5f8537a6712a57f0a33e447f0",
 			"urls": [
-				"bzz-raw://a97af55245a2e670a4796afd3a9af1c4a24294bbdc875c3aee99f3acc551c422",
-				"dweb:/ipfs/QmXrYWJGy63PzdzHkuCrCi2uv2uRpLQMAwR6yqKiiyaxVW"
+				"bzz-raw://55e42862c454eeb94b6f888faba3cd4a8a65df02c5470d14ecb703acff84d241",
+				"dweb:/ipfs/QmRMhLpZxZfH2KNiiKxS21aLHF4PLMkHtbjdB8Kg7V3vAB"
 			]
 		},
 		"contracts/utils/Address.sol": {
