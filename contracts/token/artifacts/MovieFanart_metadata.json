@@ -295,8 +295,33 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getDefaultAdminRole",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenID",
+						"type": "uint256"
+					}
+				],
+				"name": "getFanartInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenID",
+						"type": "uint256"
+					}
+				],
+				"name": "getMovieAddr",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -462,29 +487,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "string",
-						"name": "tokenURI",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "ticketNum",
-						"type": "uint256"
-					}
-				],
-				"name": "mintMovieTicket",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -539,6 +541,39 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_fanartURI",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mTokenID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_profit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_proportion",
+						"type": "uint256"
+					}
+				],
+				"name": "publishFanart",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "bytes32",
 						"name": "role",
 						"type": "bytes32"
@@ -570,6 +605,19 @@
 				"name": "revokeRole",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenID",
+						"type": "uint256"
+					}
+				],
+				"name": "rewardFanart",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -895,7 +943,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"token/MovieTicket.sol": "MovieTicket"
+			"token/MovieFanart.sol": "MovieFanart"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -1021,11 +1069,11 @@
 				"dweb:/ipfs/QmXiA5TTQvAx4oM7woB46v9tqfeiHa7gBGMQeo3SkJza4p"
 			]
 		},
-		"token/MovieTicket.sol": {
-			"keccak256": "0x2b40a762545f87d6a6c99ce8b057b369c8a211f5f8537a6712a57f0a33e447f0",
+		"token/MovieFanart.sol": {
+			"keccak256": "0x3ecb92fd3a44bc811c5108a8397c0312d7f86bf68452f124794ae45698fbd274",
 			"urls": [
-				"bzz-raw://55e42862c454eeb94b6f888faba3cd4a8a65df02c5470d14ecb703acff84d241",
-				"dweb:/ipfs/QmRMhLpZxZfH2KNiiKxS21aLHF4PLMkHtbjdB8Kg7V3vAB"
+				"bzz-raw://db79cd89880b764519f70c40fdcdeb9f0155f07fbbbb366864df0716acc63dab",
+				"dweb:/ipfs/QmRtufy7iDkeMqmeAQVuUZwYXECvSi2avuQZN4DbPxgdAw"
 			]
 		},
 		"utils/Address.sol": {
