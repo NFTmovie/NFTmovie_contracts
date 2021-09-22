@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/token/MovieFanart.sol": "EnumerableSet"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/token/MovieFanart.sol": {
+			"keccak256": "0x89a48f60174649977fb322467d96fd58e89a65522c7090c31e47484009e0a90d",
+			"urls": [
+				"bzz-raw://a3060518d17d80dc4505aa197daf1588cb68fffc94895d3557e2bde61c420376",
+				"dweb:/ipfs/QmV1RSgJPEAqCehYiwKhohZhEJNGBzDwMuWwbEziu8HXo4"
+			]
+		}
+	},
+	"version": 1
+}
